@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<title>foods</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style type="text/css">
+		header{
+			box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+			font-family: "Poppins", sans-serif!important;
+			font-size: 52px!important;
+			font-weight: 700;
+			color: rgb(239, 79, 95);
+			height: 100px!important;
+			width: 100%;
+			position: fixed!important;
+			z-index: 1;
+		}
+		section{
+			padding-top: 8rem;
+		}
+		.crd:hover{
+			background-color: white;
+			border-radius: 14px;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+		}
+		@media (min-width:320px) and (max-width:600px){
+			.crd{
+			background-color: white;
+			border-radius: 14px;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+			}
+			.rating{
+			background-color: green;
+			display: flex;
+			align-items: center;
+			color: white;
+			height: 25px;
+			font-size: 12px;
+			font-weight: 700;
+			padding-left: 8px!important;
+			padding-right: 8px!important;
+			border-radius: 8px;
+		}
+		i{
+			color: white;
+			display: inline-block;
+			font-size: 9px;
+			vertical-align: bottom;
+			padding-left: 10px;
+			margin-bottom: 0px;
+		}
+		}
+		.crd-con{
+			padding-right: 13px;
+		}
+		.rating{
+			background-color: green;
+			display: flex;
+			align-items: center;
+			color: white;
+			height: 25px;
+			font-size: 12px;
+			font-weight: 700;
+			padding-left: 8px!important;
+			border-radius: 8px;
+		}
+		img{
+			width: 100%!important;
+			min-height: 200px!important;
+			max-height: 200px!important;
+		}
+		i{
+			color: white;
+			display: inline-block;
+			font-size: 9px;
+			vertical-align: bottom;
+			margin-left: 2px;
+			margin-bottom: 0px;
+		}
+		h5{
+			font-family: "Poppins",sans-serif!important;
+		}
+		h6{
+			font-family: "Raleway", sans-serif!important;
+			font-weight: 400;
+		}
+		p{
+			font-family: "Raleway", sans-serif!important;
+			font-weight: 700;
+		}
+		span{
+			font-family: "Open Sans",sans-serif!important;
+		}
+	</style>
+</head>
+<body>
+	<header class="h d-flex justify-content-center mt-0 mb-3 py-2 position-fixed bg-white">zomato</header>
+<section class="food"></section>
+
+
+
+<script type="text/javascript">
+	foods=[{id:1,name:"Samco",dish:"South,North",rate:4.3,rupe:"$11 for one",time:"42 min",imgurl:"https://b.zmtcdn.com/data/pictures/4/65484/e88c2ee9bf334ce9151be32c149446bd_o2_featured_v2.jpg"},{id:2,name:"KFC",dish:"Burger,Fastfood",rate:3.8,rupe:"$11 for one",time:"25 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/9/65279/83e71b55d4a73c3f0e1a5a353f90eb13_o2_featured_v2.jpg?output-format=webp"},{id:3,name:"Anjappar",dish:"Southindians",rate:3.8,rupe:"$11 for one",time:"36 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/1/65031/a1a2a2f77fc3654e676be652c10c1ca4_o2_featured_v2.jpg?output-format=webp"},{id:4,name:"SS Hydrebad",dish:"Briyani,Seafood",rate:4.8,rupe:"$11 for one",time:"42 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/7/68607/a104b53df2e8d9998c238b2b608cc8af_o2_featured_v2.jpg?output-format=webp"},{id:5,name:"Vasantha Bavan",dish:"South,North",rate:3.8,rupe:"$11 for one",time:"42 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/5/65975/f39ed8715382ed9347cfe2ca7ceb30ce_o2_featured_v2.jpg?output-format=webp"},{id:6,name:"Upavihar",dish:"Southindian",rate:3.9,rupe:"$11 for one",time:"29 min",imgurl:"https://b.zmtcdn.com/data/pictures/1/20721351/ad43c681de293aed8a77f5776f10d415_o2_featured_v2.jpg?output-format=webp"},{id:7,name:"Madurai Hotel",dish:"Briyani,Chiense",rate:3.7,rupe:"$18 for one",time:"30 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/7/68317/91fda4b82cdcc4a89b57d159d6caaae1_o2_featured_v2.jpg"},{id:8,name:"Kesav Chatts",dish:"Burger,Fastfood",rate:3.6,rupe:"$18 for one",time:"35 min",imgurl:"https://b.zmtcdn.com/data/pictures/5/19184065/a22602b0ebdd6b9720e9c9dff2093d91_o2_featured_v2.jpg"},{id:9,name:"Hotel Shiva",dish:"South,North",rate:4.1,rupe:"$18 for one",time:"38 min",imgurl:"https://b.zmtcdn.com/data/pictures/8/70858/86dfa21a3abf5893135a1bb14dcc08f7_o2_featured_v2.jpg"},{id:10,name:"Thalapakatti",dish:"Briyani,South",rate:4.1,rupe:"$18 for one",time:"41 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/1/65141/48a37af14bb29f58ad35cd0d4d14c512_o2_featured_v2.jpg"},{id:11,name:"Sovoury sea",dish:"Arabian",rate:4.1,rupe:"$20 for one",time:"46 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/8/65518/c1997370ccb1e074217359812fc72243_o2_featured_v2.jpg"},{id:12,name:"briyani,Adayar",dish:"Briyani",rate:3.3,rupe:"$14 for one",time:"27 min",imgurl:"https://b.zmtcdn.com/data/pictures/2/19095462/3c53a38919ff22a1d053ece3e68ddf7e_o2_featured_v2.jpg"},{id:13,name:"AI Faham",dish:"Chiense,BBQ",rate:3.6,rupe:"$20 for one",time:"33 min",imgurl:"https://b.zmtcdn.com/data/pictures/6/73166/2d9376a8d8e949a0df75e39ad2d9badf_o2_featured_v2.jpg"},{id:14,name:"La pino'z",dish:"Pizza",rate:3.8,rupe:"$20 for one",time:"38 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/9/19847149/54b6de34323395a3b10897e48bd2a6e5_o2_featured_v2.jpg"},{id:15,name:"Pizza Hut",dish:"Pizza,Fastfood",rate:3.5,rupe:"$20 for one",time:"40 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/6/65456/4b16336b06df38a18362be00bf81d2e5_o2_featured_v2.jpg"},{id:16,name:"Hotel Saravana",dish:"North,South",rate:3.7,rupe:"$20 for one",time:"45 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/9/65499/8096b242f31979a560e923310e07ee16_o2_featured_v2.jpg"},{id:17,name:"MC's Donald",dish:"Burger,Fastfood",rate:4.1,rupe:"$20 for one",time:"29 min",imgurl:"https://b.zmtcdn.com/data/pictures/7/18387727/dfa17aeaf1171dc45f7afd7c266eb524_o2_featured_v2.jpg"},{id:18,name:"Brijiwasi Sweets",dish:"Mithai,Streetfood",rate:3.9,rupe:"$20 for one",time:"23 min",imgurl:"https://b.zmtcdn.com/data/pictures/9/68189/a2836371e7415bccf67f127e41c88db2_o2_featured_v2.jpg"},{id:19,name:"Hotel Farook",dish:"Shawarma",rate:4.2,rupe:"$20 for one",time:"19 min",imgurl:"https://b.zmtcdn.com/data/pictures/5/18718455/dc1202de9ab049b5b1be32ce6bdcd791_o2_featured_v2.jpg"},{id:20,name:"The Red Box",dish:"Momos",rate:3.8,rupe:"$11 for one",time:"24 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/1/72511/46016dd7dbec7d7dc1115ae21e4b0834_o2_featured_v2.jpeg"},{id:21,name:"Manohari Sweets",dish:"Streetfood",rate:4.3,rupe:"$11 for one",time:"25 min",imgurl:"https://b.zmtcdn.com/data/pictures/4/19737694/ca519189f721caf9016b63549b224d3b_o2_featured_v2.jpg"},{id:22,name:"Lunch Box",dish:"Northindian",rate:4.1,rupe:"$11 for one",time:"60 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/6/19410936/a350c22d22c1e538c68c35c85e7695bf_o2_featured_v2.jpg"},{id:23,name:"Cake Zone",dish:"Bakery",rate:4.1,rupe:"$11 for one",time:"19 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/9/19490869/71889bd9ca04ac72a63e29daad56e6b7_o2_featured_v2.jpg"},{id:24,name:"Kakada",dish:"Streetfood",rate:4.4,rupe:"$11 for one",time:"40 min",imgurl:"https://b.zmtcdn.com/data/pictures/0/66330/8aee9a72f7e34daf0786912c36bd6c4d_o2_featured_v2.jpeg"},{id:25,name:"City Square",dish:"Meats,BBQ",rate:3.4,rupe:"$11 for one",time:"40 min",imgurl:"https://b.zmtcdn.com/data/pictures/3/67083/916cf13c160bd6b1dde72d4934c6cc21_o2_featured_v2.jpg"},{id:26,name:"Lassi Shop",dish:"Juice,Icecream",rate:4.1,rupe:"$11 for one",time:"28 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/7/18529497/356dba8618c661f83b17c5e3dd1fd02f_o2_featured_v2.jpg"},{id:27,name:"Oyala Pizza",dish:"Pizza,Fastfood",rate:3.6,rupe:"$20 for one",time:"38 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/5/65155/e8cf1c58f2bb217f3d85ff50b7fe39a3_o2_featured_v2.jpg"},{id:28,name:"Meat and Eat",dish:"Burger,Briyani",rate:3.8,rupe:"$11 for one",time:"35 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/9/70929/93f0ba995d6eddf1eede9592b02dcd9c_o2_featured_v2.jpg"},{id:29,name:"Subway",dish:"Sandwich",rate:3.4,rupe:"$20 for one",time:"32 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/0/65540/f31733dfcef4c1edb388b77619e07a59_o2_featured_v2.jpg"},{id:30,name:"Starbucks Coffee",dish:"Cafe,Fastfood",rate:3.3,rupe:"$14 for one",time:"40 min",imgurl:"https://b.zmtcdn.com/data/pictures/chains/5/70595/4d6def536582de6daf45a8182c1be4c3_o2_featured_v2.jpg"}];
+	sec=document.querySelector(".food");
+
+	condiv=document.createElement("div");
+	condiv.classList.add("container");
+	sec.appendChild(condiv);
+
+	rowdiv=document.createElement("div");
+	rowdiv.classList.add("row");
+	rowdiv.classList.add("gy-3");
+	condiv.appendChild(rowdiv);
+
+foods.forEach(function(cards){
+	div1=document.createElement("div");
+	div1.classList.add("crd-box");
+	div1.classList.add("col-lg-3");
+	div1.classList.add("col-md-6");
+	div1.classList.add("col-sm-6");
+	div1.classList.add("col-12");
+	rowdiv.appendChild(div1);
+
+	div2=document.createElement("div");
+	div2.classList.add("crd");
+	div2.classList.add("mx-1");
+    div2.classList.add("p-2");
+	div1.appendChild(div2);
+
+	img=document.createElement("img");
+	img.classList.add("img-fluid");
+	img.classList.add("rounded-4");
+	img.src=cards.imgurl;
+	div2.appendChild(img);
+
+	div3=document.createElement("div");
+	div3.classList.add("crd-con");
+	div3.classList.add("mt-2");
+	div2.appendChild(div3);
+
+	div4=document.createElement("div");
+	div4.classList.add("row");
+	div4.classList.add("d-flex");
+    div4.classList.add("align-items-center");
+	div3.appendChild(div4);
+
+	heading=document.createElement("h5");
+	heading.classList.add("col-lg-10")
+	heading.classList.add("col-md-10")
+	heading.classList.add("col-sm-10")
+	heading.classList.add("col-10")
+	heading.innerText=cards.name;
+	div4.appendChild(heading);
+
+	rte=document.createElement("span");
+	rte.classList.add("col-lg-2");
+	rte.classList.add("col-md-2");
+	rte.classList.add("col-sm-2");
+	rte.classList.add("col-2");
+	rte.classList.add("rating");
+	rte.innerText=cards.rate;
+	div4.appendChild(rte);
+
+	i=document.createElement("i");
+	//i.classList.add("col-lg-1");
+	i.classList.add("bi-star-fill");
+	rte.append(i);
+
+	div5=document.createElement("div");
+	div5.classList.add("row");
+	div5.classList.add("mt-2");
+	div5.classList.add("d-flex");
+	div5.classList.add("justify-content-between");
+    div5.classList.add("align-items-center");
+	div3.appendChild(div5);
+
+    dis=document.createElement("h6");
+    dis.classList.add("col-lg-6")
+	dis.classList.add("col-md-6")
+	dis.classList.add("col-sm-6")
+	dis.classList.add("col-6")
+    dis.innerText=cards.dish;
+    div5.appendChild(dis);
+
+    rs=document.createElement("h6");
+    rs.classList.add("text-end")
+    rs.classList.add("col-lg-6")
+	rs.classList.add("col-md-6")
+	rs.classList.add("col-sm-6")
+	rs.classList.add("col-6")
+    rs.innerText=cards.rupe;
+    div5.appendChild(rs);
+
+    div6=document.createElement("div");
+	div6.classList.add("row");
+	div6.classList.add("d-flex");
+	div6.classList.add("text-end");
+    div6.classList.add("align-items-center");
+	div3.appendChild(div6);
+
+	tim=document.createElement("p");
+    tim.innerText=cards.time;
+    div6.appendChild(tim);
+});
+
+
+</script>
+
+</body>
+</html>
